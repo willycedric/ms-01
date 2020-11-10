@@ -8,7 +8,7 @@ from random import randint
 from flask import request
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:root@data:3307/mydatabase'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:root@data:3306/mydatabase'
 app.config['SQLALCHEMY_ECHO'] = True
 db = SQLAlchemy(app)
 # app.secret_key = 'changethis'
